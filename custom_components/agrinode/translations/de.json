@@ -1,0 +1,42 @@
+{
+  "config": {
+    "title": "AgriNode",
+    "step": {
+      "user": {
+        "title": "Verbindung zum AgriNode Gateway herstellen",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "api_key": "API-Schlüssel (optional)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zum Gateway fehlgeschlagen. Bitte überprüfen Sie die Verbindung und Anmeldedaten.",
+      "invalid_auth": "Ungültige Authentifizierung",
+      "unknown": "Unerwarteter Fehler"
+    },
+    "abort": {
+      "already_configured": "Gerät ist bereits konfiguriert"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "air_temperature": {
+        "name": "Temperatur"
+      },
+      "air_humidity": {
+        "name": "Luftfeuchtigkeit"
+      },
+      "soil_moisture": {
+        "name": "Bodenfeuchtigkeit"
+      },
+      "brightness": {
+        "name": "Helligkeit"
+      },
+      "battery_level": {
+        "name": "Batteriestand"
+      }
+    }
+  }
+}

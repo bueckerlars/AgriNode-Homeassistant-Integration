@@ -1,0 +1,11 @@
+{
+  "domain": "agrinode",
+  "name": "AgriNode",
+  "documentation": "https://github.com/bueckerlars/AgriNode",
+  "dependencies": [],
+  "codeowners": ["@bueckerlars"],
+  "requirements": ["aiohttp>=3.8.1"],
+  "iot_class": "cloud_polling",
+  "version": "0.1.0",
+  "config_flow": true
+}

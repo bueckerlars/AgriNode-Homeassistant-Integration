@@ -1,0 +1,42 @@
+{
+  "config": {
+    "title": "AgriNode",
+    "step": {
+      "user": {
+        "title": "Connect to the AgriNode Gateway",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "api_key": "API Key (optional)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the gateway. Please check the connection and credentials.",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "air_temperature": {
+        "name": "Temperature"
+      },
+      "air_humidity": {
+        "name": "Humidity"
+      },
+      "soil_moisture": {
+        "name": "Soil Moisture"
+      },
+      "brightness": {
+        "name": "Brightness"
+      },
+      "battery_level": {
+        "name": "Battery Level"
+      }
+    }
+  }
+}
