@@ -1,7 +1,7 @@
 {
   "domain": "agrinode",
   "name": "AgriNode",
-  "documentation": "https://github.com/bueckerlars/AgriNode",
+  "documentation": "https://github.com/bueckerlars/AgriNode-Homeassistant-Integration",
   "dependencies": [],
   "codeowners": ["@bueckerlars"],
   "requirements": ["aiohttp>=3.8.1"],
