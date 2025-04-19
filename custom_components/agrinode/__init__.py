@@ -92,7 +92,7 @@ class AgriNodeDataUpdateCoordinator(DataUpdateCoordinator):
         try:
             headers = {"Content-Type": "application/json"}
             if self.api_key:
-                headers["Authorization"] = f"Bearer {self.api_key}"
+                headers["Authorization"] = f"ApiKey {self.api_key}"
 
             async with async_timeout.timeout(10):
                 response = await self.session.get(
@@ -123,7 +123,7 @@ class AgriNodeDataUpdateCoordinator(DataUpdateCoordinator):
             try:
                 headers = {"Content-Type": "application/json"}
                 if self.api_key:
-                    headers["Authorization"] = f"Bearer {self.api_key}"
+                    headers["Authorization"] = f"ApiKey {self.api_key}"
 
                 async with async_timeout.timeout(10):
                     response = await self.session.get(
